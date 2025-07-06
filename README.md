@@ -7,6 +7,7 @@ A self-contained home monitoring setup using ESP microcontrollers — **no inter
 - 🚶 Motion detection via PIR sensor
 - 📺 Sci-fi themed local dashboard served from Wemos D1
 - 📡 All devices connected via Wi-Fi with **static IPs**
+- Webpage is served from Wemos D1, can handle maximum of 1 client when video is being streamed and 4 clients when video i snot being streamed
 
 ---
 
