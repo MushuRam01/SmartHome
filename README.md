@@ -33,10 +33,14 @@ A self-contained home monitoring setup using ESP microcontrollers — **no inter
 
 ## 📷 ESP32-CAM
 
-The ESP32-CAM uses the **Arduino IDE example sketch** with a simple changes to use static IP adress
-  -added the following to the example sketch 
-  '''cpp
-    IPAddress local_IP(192, 168, 1, 202);
-    IPAddress gateway(192, 168, 1, 1);
-    IPAddress subnet(255, 255, 255, 0);
-    WiFi.config(local_IP, gateway, subnet); 
+
+### Custom Changes:
+- Set board: `AI Thinker ESP32-CAM`
+- Set static IP:
+
+```cpp
+IPAddress local_IP(192, 168, 1, 202);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
+WiFi.config(local_IP, gateway, subnet);
+
